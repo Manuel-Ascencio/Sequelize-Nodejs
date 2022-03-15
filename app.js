@@ -2,10 +2,11 @@ const express = require("express");
 
 const { globalErrorHandler } = require("./controllers/error-controller");
 
-const { AppError } = require("./util/appError");
 const { postsRouter } = require("./routes/posts-routes");
 const { usersRouter } = require("./routes/users-routes");
 const { commentsRouter } = require("./routes/comment-routes");
+
+const { AppError } = require("./util/appError");
 
 const app = express();
 
